@@ -9,7 +9,7 @@ mongoose.connect(mongoURL);
 const db=mongoose.connection;
 
 db.on('connected',()=>{
-    console.log("db connected")
+    console.log("db connected" +mongoURL)
 })
 
 db.on('disconnected',()=>{
